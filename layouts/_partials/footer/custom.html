@@ -25,3 +25,20 @@
     }
 </style>
 {{- end -}}
+
+{{- $brMusicData := hugo.Data.music.generated | default slice -}}
+{{- $brMusicPlaylist := slice -}}
+{{- range $brMusicData -}}
+    {{- $brCover := "" -}}
+    {{- if .cover -}}
+        {{- $brCover = .cover | relURL -}}
+    {{- end -}}
+    {{- $brMusicPlaylist = $brMusicPlaylist | append (dict "id" .id "title" .title "artist" .artist "album" .album "audio" (.audio | relURL) "cover" $brCover "order" .order) -}}
+{{- end -}}
+
+{{- if gt (len $brMusicPlaylist) 0 -}}
+<div id="br-music-player"></div>
+<script type="application/json" id="br-music-playlist">{{ $brMusicPlaylist | jsonify | safeJS }}</script>
+{{- $brMusicJs := resources.Get "js/music-player.js" | minify | fingerprint -}}
+<script src="{{ $brMusicJs.RelPermalink }}"></script>
+{{- end -}}
