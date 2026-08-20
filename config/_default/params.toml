@@ -12,7 +12,7 @@ SortBy = "default"
 
 [footer]
     since      = 2025
-    customText = "用 ❤️ 和 Hugo 搭建"
+    customText = ""
 
 [dateFormat]
     published   = "2006年01月02日"
