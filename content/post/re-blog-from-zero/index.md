@@ -3,6 +3,7 @@ title: "RE：从零开始的博客"
 description: "折腾了两天把博客搭上线，过程中踩了不少坑。这篇顺手记一下，免得下次再踩。"
 slug: "re-blog-from-zero"
 date: 2026-08-20
+image: cover.jpg
 categories: ["教程"]
 tags: ["Hugo", "GitHub Pages", "域名", "音乐播放器"]
 draft: false
