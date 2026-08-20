@@ -1,7 +1,7 @@
 # 博客基础配置（已中文化）
 baseurl = "https://songconmaisaix31-design.github.io/my_blog/"
 locale  = "zh-cn"
-title   = "我的博客"
+title   = "David Wang"
 
 # Theme i18n support
 # See all available values at https://github.com/CaiJimmy/hugo-theme-stack/tree/master/i18n
