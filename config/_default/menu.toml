@@ -17,13 +17,13 @@
 [[social]]
     identifier = "twitter"
     name       = "Twitter / X"
-    url        = "https://twitter.com"
+    url        = "https://x.com/ktdkydylc99280"
     [social.params]
         icon = "brand-twitter"
 
 [[social]]
     identifier = "email"
     name       = "邮箱"
-    url        = "mailto:your-email@example.com"
+    url        = "mailto:songconmaisaix31@gmail.com"
     [social.params]
         icon = "mail"
