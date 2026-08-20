@@ -1,7 +1,7 @@
 # 主导航菜单配置
 [[main]]
     identifier = "about"
-    name       = "about"
+    name       = "About"
     url        = "/page/about"
     [main.params]
         icon = "user"
