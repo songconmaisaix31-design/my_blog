@@ -45,3 +45,7 @@ hugo mod tidy
 ## Deploy to another static page hostings
 
 Check official Hugo documentation: https://gohugo.io/host-and-deploy/
+
+## 音乐播放器（Music Player）
+
+本站带一个右下角悬浮音乐播放器。添加歌曲的方法见 [`static/music/README.md`](static/music/README.md)：把音频放进 `static/music/你的歌曲目录/`，然后运行 `python scripts/sync_music.py` 生成歌单，提交即可。
