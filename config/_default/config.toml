@@ -1,18 +1,17 @@
-# Change baseurl before deploy
+# 博客基础配置（已中文化）
 baseurl = "https://songconmaisaix31-design.github.io/my_blog/"
-locale  = "en-us"
-title   = "Hugo Theme Stack Starter"
+locale  = "zh-cn"
+title   = "我的博客"
 
 # Theme i18n support
 # See all available values at https://github.com/CaiJimmy/hugo-theme-stack/tree/master/i18n
-defaultContentLanguage = "en"
+defaultContentLanguage = "zh-cn"
 
-# Set hasCJKLanguage to true if DefaultContentLanguage is in [zh-cn ja ko]
-# This will make .Summary and .WordCount behave correctly for CJK languages.
-hasCJKLanguage = false
+# 启用中文支持（CJK字符计数和摘要截取）
+hasCJKLanguage = true
 
-# Change it to your Disqus shortname before using
-disqusShortname = "hugo-theme-stack"
+# Disqus 评论系统（请改成你自己的 shortname）
+disqusShortname = ""
 
 [pagination]
     pagerSize = 5

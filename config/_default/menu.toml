@@ -1,24 +1,43 @@
-# Configure main menu and social menu
-#[[main]]
-#identifier = "home"
-#name = "Home"
-#url = "/"
-#[main.params]
-#icon = "home"
-#newtab = true
+# 主导航菜单配置
+[[main]]
+    identifier = "home"
+    name       = "首页"
+    url        = "/"
+    [main.params]
+        icon = "home"
 
+[[main]]
+    identifier = "archives"
+    name       = "归档"
+    url        = "/archives"
+    [main.params]
+        icon = "archives"
+
+[[main]]
+    identifier = "about"
+    name       = "关于"
+    url        = "/page/about"
+    [main.params]
+        icon = "user"
+
+# 社交链接菜单（请修改为你的真实链接）
 [[social]]
     identifier = "github"
     name       = "GitHub"
-    url        = "https://github.com/CaiJimmy/hugo-theme-stack"
-
+    url        = "https://github.com/songconmaisaix31-design"
     [social.params]
         icon = "brand-github"
 
 [[social]]
     identifier = "twitter"
-    name       = "Twitter"
+    name       = "Twitter / X"
     url        = "https://twitter.com"
-
     [social.params]
         icon = "brand-twitter"
+
+[[social]]
+    identifier = "email"
+    name       = "邮箱"
+    url        = "mailto:your-email@example.com"
+    [social.params]
+        icon = "mail"

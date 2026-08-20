@@ -1,0 +1,5 @@
+# 此目录用于存放博客文章
+# 每篇文章放在一个单独的文件夹内，包含 index.md 文件
+# 
+# 示例：
+# content/post/my-first-post/index.md

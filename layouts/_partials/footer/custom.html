@@ -1,0 +1,27 @@
+{{- $bg := resources.Get "background/3a26ae06f098c3afa8d1bf0849f14bb5.jpg" -}}
+{{- if $bg -}}
+<style>
+    body {
+        background-image: url("{{ $bg.RelPermalink }}");
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    /* 半透明遮罩：避免背景影响正文阅读 */
+    body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        z-index: -1;
+        background-color: rgba(255, 255, 255, 0.82);
+        pointer-events: none;
+    }
+
+    /* 暗色模式下使用深色遮罩 */
+    :root[data-scheme="dark"] body::before {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+</style>
+{{- end -}}
