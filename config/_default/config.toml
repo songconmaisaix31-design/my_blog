@@ -1,5 +1,5 @@
 # 博客基础配置（已中文化）
-baseurl = "https://songconmaisaix31-design.github.io/my_blog/"
+baseurl = "https://davidwang.space/"
 locale  = "zh-cn"
 title   = "David Wang"
 
